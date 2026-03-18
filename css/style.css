@@ -1,107 +1,244 @@
-/* พื้นหลังทั้งหน้า — เขียวอ่อนมาก */
 body {
-    background-color: #f0fdf4;
-    font-family: 'Sarabun', sans-serif;
+    background-color: #f2e6d9;
+    font-family:'Itim', cursive;
     font-size: 16px;
     line-height: 1.8;
-    color: #374151;
+    color: #7b4a3a;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+.food-img {
+        border: 2px solid #ae917c;
+            border-radius: 15px;
+                object-fit: cover; 
+                    aspect-ratio: 4 / 3; 
 }
 
-/* ลิงก์ใน nav */
-.main-nav a {
-    color: rgba(255, 255, 255, 0.85);
-    text-decoration: none;
-    font-weight: 500;
-}
-.main-nav a:hover {
-    color: white;
-    text-decoration: underline;
-}
-.logo {
-    color: #feffff;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-}
-.price {
-    color: #16a34a;
-    font-weight: bold;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #16a34a;
-}
-.bestseller {
-    background-color: #fef9c3; /* เหลืองอ่อน */
-    color: #854d0e;            /* น้ำตาลทอง */
-}
-.new {
-    background-color: #dcfce7; /* เขียวอ่อน */
-    color: #166534;            /* เขียวเข้ม */
-}
-/* Hero Section — ไล่สีเขียว (gradient) */
-.hero-section {
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-    background: linear-gradient(
-        135deg,
-        #15803d,         /* เขียวเข้ม */
-        #22c55e          /* เขียวสด */
-    );
-    color: white;
-    text-align: center;
-    padding: 4rem 2rem;
-}
-/* หัวข้อส่วนต่าง ๆ */
-.section-title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #166534;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-/* ชื่อเมนูในการ์ด */
-.card-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #1f2937;
-    margin-bottom: 0.3rem;
+/* ปุ่ม Home */
+.bottom-menu{
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    z-index:9999;
 }
 
-/* คำอธิบายเมนู */
-.card-desc {
-    color: #6b7280;
-    font-size: 0.9rem;
+.logo{
+
+font-family:'Sriracha', cursive;
+font-size:22px;
+
 }
 
-/* ราคา */
-.price {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #16a34a;
+.nav-link{
+
+color:#7a4a35;
+margin:10px;
+
 }
-/* Header — เขียวเข้มทึบ */
-.site-header {
-    background-color: #166534;
-    color: white;
-    padding: 1rem 2rem;
+
+/* หัวข้อหลัก */
+.title{
+    font-family:'Sriracha', cursive;
+    font-size:48px;
+    margin-bottom:10px;
+    line-height: 1.8;
+    color: #be8b74;
 }
-/* ส่วนเมนู — เขียวอ่อน */
-#menu {
-    background-color: #f0fdf4;
-    padding: 3rem 2rem;
+
+/* ข้อความรอง */
+.subtitle{
+    font-size:30px;
+    line-height: 1.8;
+    color: #9c6852; 
 }
-/* Footer — เขียวเข้ม เหมือน Header */
-.site-footer {
-    background-color: #14532d;
-    color: rgba(255, 255, 255, 0.8);   /* ขาว 80% */
-    text-align: center;
-    padding: 2rem;
+
+/* header */
+
+.site-header{
+text-align:center;
+background:#d9d9d9;
+padding:25px;
+border-radius:25px;
+margin:20px;
+border-bottom:2px solid #ae917c;
+color:#964D32;
 }
-/* Badge text */
-.badge {
-    font-size: 0.7rem;
-    font-weight: 600;
-    text-transform: uppercase;   /* ตัวพิมพ์ใหญ่ */
-    letter-spacing: 0.05em;
+.container{
+max-width:1000px;
+max-width:900px;
+margin:auto;
+}
+ 
+/* hover ปุ่ม */
+.btn:hover{
+    background-color:#f2e6d9;
+    color:#7b4a3a;
+    transition:0.3s;
+}
+
+/* ตอนกดปุ่ม */
+.btn:active{
+    background-color:#be8b74;
+    color:white;
+}.nav-link:hover{
+    background:#f2e6d9;
+    border-radius:10px;
+}
+
+/* --- Hero --- */
+
+.hero {
+    padding: 20px 0 !important; 
+    
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    filter: invert(1); 
+}
+.hero h1, .hero h3, .hero p {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.carousel-img {
+    width: 100%; 
+    height: 500px; 
+    max-width: 900px;
+    object-fit: cover; 
+    margin: 0 auto;
+    object-position: center;
+    display: block;
+}
+
+.carousel-inner {
+    background-color: #f2e6d9;
+}
+
+@media (max-width: 1200px) {
+    .carousel-img {
+        height: 600px !important;
+    }
+}
+
+.explore-btn{
+background:#e49a62;
+color:white;
+border-radius:25px;
+padding:10px 25px;
+margin-top:20px;
+}
+
+.food-img{
+    border:2px solid #ae917c;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.food-img:hover{
+    transform:scale(1.05);
+}
+/* การ์ดร้าน */
+.section-title{
+margin-bottom:15px;
+}
+html{
+    scroll-behavior:smooth;
+}
+.shop-card{
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+.explore-btn:hover{
+    background-color:#ffce9d;
+    color:#7b4a3a;
+}
+.shop-btn{
+border:1px solid #d8b7a6;
+border-radius:20px;
+padding:6px 18px;
+}
+
+/* ปุ่มผู้จัดทำ */
+.creator-btn:hover{
+    background:#d4ecff;
+    color:#7b4a3a;
+}
+.creator-btn{
+background:#e49a62;
+color:white;
+border-radius:25px;
+padding:6px 18px;
+}
+
+.shop-card{
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.shop-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.shop-card:hover{
+    transform:scale(1.05);
+}
+.member-card .card-title{
+    font-size:18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width:100%;
+    display:block;
+}
+.member-card{
+    height:100%;
+    border-radius:15px;
+    padding:15px;
+    transition:0.3s;
+    height:120px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* การ์ดลอย */
+.member-card:hover{
+    background:#f8ca9a;
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* เปลี่ยนสีชื่อสมาชิก */
+.member-card:hover .card-title{
+    color:#000000;
+}
+
+/* footer */
+.site-footer{
+margin-top:60px;
+font-size:16px;
+background:#e8ddd2;
+text-align:center;
+padding:20px;
+}
+
+.nav-btn{
+background:#e49a62;
+color:white;
+border-radius:25px;
+padding:8px 20px;
+margin:5px;
+transition:0.3s;
+}
+
+.nav-btn:hover{
+background:#ffce9d;
+color:#7b4a3a;
 }

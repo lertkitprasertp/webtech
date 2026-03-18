@@ -1,136 +1,143 @@
 <!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap"
-      rel="stylesheet">
-    <title>Leaf & Bean Café</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<html>
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>ตลาดแนะนำ</title>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+                <link rel="stylesheet" href="../css/style.css">
+                <link href="https://fonts.googleapis.com/css2?family=Itim&family=Sriracha&display=swap" rel="stylesheet">
+        </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Brand</a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#darkNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <header class="site-header">
+                <div class="container">
+                        <nav class="navbar navbar-expand-lg">
+                                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">☰</button>
+                                <div class="collapse navbar-collapse" id="menu">
+                                <ul class="navbar-nav mx-auto">
+                                        
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="../pages/rice.html">ร้านอาหาร</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="../pages/snacks.html">ร้านของว่าง</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="../pages/water.html">ร้านเครื่องดื่ม</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="../pages/name.html">ผู้จัดทำ</a>
+                                        </li>
+                                </ul>
+                
+                        </div>
+                        </nav>
+                </div>
+        </header>
 
-            <div class="collapse navbar-collapse" id="darkNav"> <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Web Design</a></li>
-                            <li><a class="dropdown-item" href="#">Development</a></li>
-                            <li><hr class="dropdown-divider"></li> <li><a class="dropdown-item" href="#">SEO</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search"> <input class="form-control me-2" type="search" placeholder="Search">
-                    <button class="btn btn-outline-light" type="submit">Search</button> </form>
-            </div>
+        <!-- Hero -->
+        <section class="hero text-center">
+                <h1>แนะนำร้านในตลาดอินดี้</h1>
+                <h3>รวมร้านอร่อยในตลาด</h3>
+                <p>ชิม ช้อป กิน เพลิน</p>
+                <!-- Carousel พื้นฐาน -->
+                        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Indicators (จุดบอกสไลด์) -->
+                        <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <!-- Slides -->
+                        <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                        <img src="https://i.postimg.cc/KzLmdCh3/1.jpg" class="d-block w-100 carousel-img" alt="Slide 1">
+                                </div>
+                                <div class="carousel-item">
+                                        <img src="https://i.postimg.cc/qRb7LTxn/1000009461.jpg" class="d-block w-100 carousel-img" alt="Slide 2">
+                                </div>
+                                <div class="carousel-item">
+                                        <img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t39.30808-6/615420239_875324478614433_8779172358465525591_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeHPKQT2z1NVSbApFg1PCSKh60agjzmBt0TrRqCPOYG3RKDEYuJs1vc76LQyitNCXGxnHInR-ipdxaTIwRWOTvw2&_nc_ohc=bkNRH2ocEUIQ7kNvwGaqqzT&_nc_oc=AdlYj5SV9rppnhLKIAHvQYfa-nMNo75VNle6vpV6VwgWq8TR326AMra5vtzRMMQCvko&_nc_zt=23&_nc_ht=scontent.fkdt1-1.fna&_nc_gid=spc-13GFuRXxCVZvRwbu1w&_nc_ss=8&oh=00_AfyHv4jgzbElEg66R172bD5XRJ98-a7A9ds0ZSiOQ4qTkg&oe=69BB2244" class="d-block w-100 carousel-img" alt="Slide 3">
+                                </div>
+                        </div>
+
+                        <!-- ปุ่มเลื่อน -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                        </button>
+
+                        </div>
+                <!-- หยุดเปลี่ยนสไลด์อัตโนมัติ -->
+                        <div class="carousel slide" data-bs-ride="false">
+
+                        <!-- กำหนดระยะเวลาต่อสไลด์ (5 วินาที) -->
+                        <div class="carousel-item active" data-bs-interval="5000">
+
+                        <!-- ปิด Touch Swipe บน Mobile -->
+                        <div class="carousel slide" data-bs-touch="false">
+
+                        <!-- ควบคุมด้วย JavaScript -->
+                        <script>
+                                const carousel = new bootstrap.Carousel('#myCarousel', {
+                                interval: 3000,  // เปลี่ยนทุก 3 วินาที
+                                wrap: true,      // วนรอบ
+                                pause: 'hover'   // หยุดเมื่อ hover
+                                });
+                                carousel.next();     // เลื่อนถัดไป
+                                carousel.prev();     // เลื่อนก่อนหน้า
+                        </script>
+                <a href="#food" class="btn explore-btn">สำรวจร้านค้า</a>
+        </section>
+
+<div class="container mt-5" id="food">
+<div class="row text-center g-4">
+
+<!-- ร้านอาหาร -->
+        <div class="col-lg-4 col-md-6">
+                <h4 class="section-title">ร้านอาหารแนะนำ</h4>
+                        <div class="card shop-card">
+                                <img src="../pages/rice.png" class="card-img-top">
+                                        <div class="card-body">
+                                                <a href="../pages/rice.html" class="btn shop-btn">ดูร้านอาหาร</a>
+                                        </div>
+                        </div>
         </div>
-    </nav>
 
-
-    <header class="site-header" id="top">
-        <h1 class="Logo">🍃 Leaf & Bean Café</h1>
-        <nav class="main-nav">
-            <a href="#menu">เมนู</a>
-            <a href="#about">เกี่ยวกับเรา</a>
-            <a href="#contact">ติดต่อ</a>
-        </nav>
-    </header>
-<main>
-    <!-- ส่วน Hero -->
-    <section class="hero-section">
-        <h2>กาแฟดี ๆ เริ่มต้นที่นี่</h2>
-        <p>คัดสรรเมล็ดกาแฟคุณภาพจากดอยสูง ชงสดใหม่ทุกแก้ว</p>
-    </section>
-
-    <!-- ส่วนเมนู -->
-    <section id="menu">
-        <h2 class="text-center mb-4">เมนูแนะนำ</h2>
-
-    <!-- จะเพิ่มการ์ดเมนูใน Section 2 -->
-    <!-- div ครอบเมนูทั้งหมด — เตรียมจัดเป็น Grid ใน CSS -->
-    <div class="menu-grid">
-        <!-- การ์ดเมนูที่ 1 -->
-          <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-3 border p-3 mb-4 rounded shadow-sm">
-                    <h3>☕ Espresso</h3>
-                    <p>เข้มข้น หอมกรุ่น คั่วกลางจากดอยช้าง</p>
-                    <p>ราคา: <span>฿55</span></p>
-         </div>
-        <!-- การ์ดที่ 2 -->
-        <div class="col-12 col-md-6 col-lg-3 border p-3 mb-4 rounded shadow-sm">
-                    <h3>🍵 Matcha Latte <span>BEST SELLER</span></h3>
-                    <p>ชาเขียวเกรดพรีเมียมจากอูจิ</p>
-                    <p>฿75</p>
+<!-- ร้านขนม -->
+        <div class="col-lg-4 col-md-6">
+                <h4 class="section-title">ร้านของว่างสุดฮิต</h4>
+                        <div class="card shop-card">
+                                <img src="../pages/sna.png" class="card-img-top">
+                                                <div class="card-body">
+                                                        <a href="../pages/snacks.html" class="btn shop-btn">ดูร้านของว่าง</a>
+                                                </div>
+                        </div>
         </div>
-        <!-- การ์ดที่ 3 -->
-         <div class="col-12 col-md-6 col-lg-3 border p-3 mb-4 rounded shadow-sm">
-                    <h3>🧊 Cold Brew</h3>
-                    <p>สกัดเย็น 18 ชั่วโมง นุ่มลึก</p>
-                    <p>฿65</p>
+
+<!-- ร้านเครื่องดื่ม -->
+        <div class="col-lg-4 col-md-6">
+                <h4 class="section-title">ร้านเครื่องดื่มน่าลอง</h4>
+                        <div class="card shop-card">
+                                        <img src="../pages/wa.png" class="card-img-top">
+                                                <div class="card-body">
+                                                        <a href="../pages/water.html" class="btn shop-btn">ดูร้านน้ำ</a>
+                                                </div>
+                        </div>
         </div>
-        <!-- การ์ดที่ 4 -->
-        <div class="col-12 col-md-6 col-lg-3 border p-3 mb-4 rounded shadow-sm">
-                    <h3>🍫 Mocha</h3>
-                    <p>กาแฟผสมช็อกโกแลต หอมหวาน</p>
-                    <p>฿70</p>
-        </div>
-    </div>
-    </section>
 
-    <!-- เรื่องราวร้าน — เนื้อหาอิสระ ใช้ <article> -->
-    <div class="content-wrapper">
-    <article id="about">
-        <h2 class="section-title">เรื่องราวของเรา</h2>
-        <p>Leaf & Bean Café เกิดจากความรักในกาแฟ...</p>
-        <figure>
-            <img src="cafe-interior.jpg" alt="บรรยากาศภายในร้าน">
-            <figcaption>บรรยากาศสบาย ๆ ภายใน Leaf & Bean Café</figcaption>
-        </figure>
-    </article>
-    </div>
-</main>
-<aside>
-        <h3>⚪ เวลาเปิด-ปิด</h3>
-        <p>จันทร์ - ศุกร์: 7:00 - 20:00</p>
-        <p>เสาร์ - อาทิตย์: 8:00 - 21:00</p>
-        <p>สถานะ: <span>เปิดอยู่</span></p>
-    </aside>
-    <p class="h1">h1. Bootstrap heading</p>
-    <p class="h2">h2. Bootstrap heading</p>
-    <p class="h3">h3. Bootstrap heading</p>
-
-    <h1 class="display-1">Display 1</h1>
-    <h1 class="display-4">Display 4</h1>
-    <button class="btn btn-primary">Primary Button</button>
-    <p class="text-primary">Primary</p>
-    <p class="text-success">Success</p>
-    <p class="text-danger">Danger</p>
-    <p class="text-warning">Warning</p>
-    <p class="text-info">Info</p>
-    <p class="text-muted">Muted</p>
-
-    <div class="bg-primary text-white">Primary BG</div>
-    <div class="bg-success text-white">Success BG</div>
-    <div class="bg-light text-dark">Light BG</div>
-    <div class="bg-dark text-white">Dark BG</div>
-    <div class="mt-3">margin-top: 1rem</div>
-    <div class="mb-5">margin-bottom: 3rem</div>
-    <div class="mx-auto">margin-left/right: auto (จัดกลาง)</div>
-
-    <div class="p-4">padding: 1.5rem ทุกด้าน</div>
-    <div class="py-3 px-5">padding-y: 1rem, padding-x: 3rem</div>
-    <footer id="contact">
-        <p>&copy; 2026 Leaf & Bean Café</p>
+</div>
+</div>
+<footer id="contact" class="site-footer">
+        <p>&copy; 2026 Noname</p>
+        <p>🕒 เวลาเปิด-ปิดตลาด : 15:30 - 20:00 น.</p>
         <p>📍 ม.ศิลปากร วิทยาเขตสนามจันทร์ จ.นครปฐม</p>
-    </footer>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
