@@ -8,13 +8,6 @@ body {
     display:flex;
     flex-direction:column;
 }
-.food-img {
-        border: 2px solid #ae917c;
-            border-radius: 15px;
-                object-fit: cover; 
-                    aspect-ratio: 4 / 3; 
-}
-
 /* ปุ่ม Home */
 .bottom-menu{
     position:fixed;
@@ -56,7 +49,6 @@ margin:10px;
 /* header */
 
 .site-header{
-font-family:'Kanit', sans-serif;
 text-align:center;
 background:#d9d9d9;
 padding:25px;
