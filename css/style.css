@@ -1,108 +1,51 @@
+/*----- พื้นฐาน -----*/
 body {
     background-color: #f2e6d9;
-    font-family:'Itim', cursive;
+    font-family: 'Itim', cursive;
     font-size: 16px;
     line-height: 1.8;
     color: #7b4a3a;
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-}
-/* ปุ่ม Home */
-.bottom-menu{
-    position:fixed;
-    bottom:20px;
-    left:20px;
-    z-index:9999;
 }
 
-.logo{
-
-font-family:'Sriracha', cursive;
-font-size:22px;
-
+/*----- HEADER -----*/
+.site-header {
+    text-align: center;
+    background: #d9d9d9;
+    padding: 25px;
+    border-radius: 25px;
+    margin: 20px;
+    border-bottom: 2px solid #ae917c;
+    color: #964D32;
+>>>>>>> fe72a3d (finalnaka)
 }
 
-.nav-link{
-
-color:#7a4a35;
-margin:10px;
-
+.logo {
+    font-family: 'Mitr', sans-serif;
+    font-size: 40px;
 }
 
-/* หัวข้อหลัก */
-.title{
-    font-family:'Sriracha', cursive;
-    font-size:48px;
-    margin-bottom:10px;
-    line-height: 1.8;
-    color: #be8b74;
+.nav-link {
+    font-family: 'Mitr', sans-serif;
+    color: #7a4a35;
+    margin: 10px;
 }
 
-/* ข้อความรอง */
-.subtitle{
-    font-size:30px;
-    line-height: 1.8;
-    color: #9c6852; 
+.nav-link:hover {
+    background: #f2e6d9;
+    border-radius: 10px;
 }
 
-/* header */
-
-.site-header{
-text-align:center;
-background:#d9d9d9;
-padding:25px;
-border-radius:25px;
-margin:20px;
-border-bottom:2px solid #ae917c;
-color:#964D32;
-}
-.container{
-max-width:1000px;
-max-width:900px;
-margin:auto;
-}
- 
-/* hover ปุ่ม */
-.btn:hover{
-    background-color:#f2e6d9;
-    color:#7b4a3a;
-    transition:0.3s;
-}
-
-/* ตอนกดปุ่ม */
-.btn:active{
-    background-color:#be8b74;
-    color:white;
-}.nav-link:hover{
-    background:#f2e6d9;
-    border-radius:10px;
-}
-
-/* --- Hero --- */
-
+/*----- HERO (หน้าหลัก) -----*/
 .hero {
-    padding: 20px 0 !important; 
-    
+    padding: 20px 0;
 }
-
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    filter: invert(1); 
-}
-.hero h1, .hero h3, .hero p {
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 
 .carousel-img {
-    width: 100%; 
-    height: 500px; 
+    width: 100%;
+    height: 500px;
     max-width: 900px;
-    object-fit: cover; 
+    object-fit: cover;
     margin: 0 auto;
-    object-position: center;
     display: block;
 }
 
@@ -110,128 +53,85 @@ margin:auto;
     background-color: #f2e6d9;
 }
 
-@media (max-width: 1200px) {
-    .carousel-img {
-        height: 600px !important;
-    }
+/*--- ปุ่มสำรวจ ---*/
+.explore-btn {
+    background: #e49a62;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 25px;
+    margin-top: 20px;
 }
 
-.explore-btn{
-background:#e49a62;
-color:white;
-border-radius:25px;
-padding:10px 25px;
-margin-top:20px;
+.explore-btn:hover {
+    background: #ffce9d;
+    color: #7b4a3a;
 }
 
-.food-img{
-    border:2px solid #ae917c;
-    border-radius:15px;
-    transition:0.3s;
+/*----- การ์ดร้าน -----*/
+.section-title {
+    margin-bottom: 15px;
 }
 
-.food-img:hover{
-    transform:scale(1.05);
-}
-/* การ์ดร้าน */
-.section-title{
-margin-bottom:15px;
-}
-html{
-    scroll-behavior:smooth;
-}
-.shop-card{
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
-}
-.explore-btn:hover{
-    background-color:#ffce9d;
-    color:#7b4a3a;
-}
-.shop-btn{
-border:1px solid #d8b7a6;
-border-radius:20px;
-padding:6px 18px;
-}
-
-/* ปุ่มผู้จัดทำ */
-.creator-btn:hover{
-    background:#d4ecff;
-    color:#7b4a3a;
-}
-.creator-btn{
-background:#e49a62;
-color:white;
-border-radius:25px;
-padding:6px 18px;
-}
-
-.shop-card{
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
-}
-
-.shop-card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.shop-card:hover{
-    transform:scale(1.05);
-}
-.member-card .card-title{
-    font-size:18px;
-    white-space: nowrap;
+.shop-card {
+    border-radius: 15px;
     overflow: hidden;
-    text-overflow: ellipsis;
-    max-width:100%;
-    display:block;
-}
-.member-card{
-    height:100%;
-    border-radius:15px;
-    padding:15px;
-    transition:0.3s;
-    height:120px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* การ์ดลอย */
-.member-card:hover{
-    background:#f8ca9a;
-    transform:translateY(-5px);
-    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+.shop-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
 }
 
-/* เปลี่ยนสีชื่อสมาชิก */
-.member-card:hover .card-title{
-    color:#000000;
+.shop-card:hover {
+    transform: scale(1.05);
 }
 
-/* footer */
-.site-footer{
-margin-top:60px;
-font-size:16px;
-background:#e8ddd2;
-text-align:center;
-padding:20px;
+.shop-btn {
+    border: 1px solid #d8b7a6;
+    border-radius: 20px;
+    padding: 6px 18px;
 }
 
-.nav-btn{
-background:#e49a62;
-color:white;
-border-radius:25px;
-padding:8px 20px;
-margin:5px;
-transition:0.3s;
+/*----- สมาชิก -----*/
+.member-card {
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.3s;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.member-card:hover {
+    background: #f8ca9a;
+    transform: translateY(-5px);
 }
 
-.nav-btn:hover{
-background:#ffce9d;
-color:#7b4a3a;
+.member-card .card-title {
+    font-size: 18px;
+}
+
+/*----- ปุ่มล่าง -----*/
+.nav-btn {
+    background: #e49a62;
+    color: white;
+    border-radius: 25px;
+    padding: 8px 20px;
+    margin: 5px;
+}
+
+.nav-btn:hover {
+    background: #ffce9d;
+    color: #7b4a3a;
+}
+
+/*----- footer -----*/
+.site-footer {
+    margin-top: 60px;
+    font-size: 16px;
+    background: #e8ddd2;
+    text-align: center;
+    padding: 20px;
 }
