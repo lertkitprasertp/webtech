@@ -56,6 +56,12 @@ body {
     background-color: #f2e6d9;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);  
+}
+
+
 /*--- ปุ่มสำรวจ ---*/
 .explore-btn {
     background: #e49a62;
